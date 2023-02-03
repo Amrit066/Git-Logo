@@ -1,0 +1,114 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather&family=Montserrat:wght@200&family=Neonderthaw&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200&family=Sacramento&display=swap');
+
+/* Color Variables */
+:root{
+  --red-color:rgba(255,62,29,255);
+  --black-color:rgba(53,53,53,255);
+  --light-color:#FFFFE8;
+  --text-color:rgba(240,240,240,0.9);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins,sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-color);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content{
+  position: relative;
+  width:50%;
+  height: 50%;
+  background-color: var(--red-color);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  transform: rotate(-45deg);
+}
+
+.line-1{
+  position: absolute;
+  left: 43%;
+  top: 30%;
+  height: 50%;
+  width: 0.5rem;
+  background-color: var(--black-color);
+  transform: rotate(45deg);
+}
+
+.line-1::after{
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: -0.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--black-color);
+  border-radius: 50%;
+}
+
+.line-2{
+  position: absolute;
+  right: 30%;
+  height: 70%;
+  width: 0.5rem;
+  background-color: var(--black-color);
+}
+
+.line-2::before{
+  content: "";
+  position: absolute;
+  top:40% ;
+  left:-0.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--black-color);
+  border-radius: 50%;
+}
+
+.line-2::after{
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left:-0.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--black-color);
+  border-radius: 50%;
+}
+
+h3{
+  color: var(--text-color);
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+span{
+  font-family: 'Amatic SC', cursive;
+  color: var(--red-color);
+}
